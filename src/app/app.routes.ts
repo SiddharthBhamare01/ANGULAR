@@ -9,6 +9,7 @@ import { LogoutComponent } from './components/logout/logout.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 import { authGuard } from './guards/auth.guard';
+import { EmployeeComponent } from './components/employee/employee.component';
 
 export const routes: Routes = [
     { path: 'login', component: LoginComponent },
@@ -16,6 +17,7 @@ export const routes: Routes = [
     { path: 'profile', component: ProfileComponent, canActivate: [authGuard] },
     { path: 'edit', component: EditProfileComponent, canActivate: [authGuard] },
     { path: 'life', component: LifeCycleComponent, canActivate: [authGuard] },
+    { path: 'employee', component: EmployeeComponent, canActivate: [authGuard] },
     { path: 'logout', component: LogoutComponent, canActivate: [authGuard] },
     { path: 'home', redirectTo: '' },
     { path: '', component: HomeComponent },

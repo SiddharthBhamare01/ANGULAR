@@ -11,8 +11,8 @@
             <p>Email: <a href="mailto:{{profileData.email}}">{{profileData.email}}</a></p>
             <p>Phone: {{profileData.phone}}</p>
         </div>
-        <div style="flex: 1;">
-            <img style="vertical-align: baseline;" [src]="profileData.avatar" [alt]="profileData.firstName">
+        <div style="flex: 1; display: flex; justify-content:flex-start; align-items:self-start; width: 100px; height: 100px; border-radius: 1%; overflow: hidden;">
+            <img style="width: 100%; height: auto; vertical-align: baseline;" [src]="profileData.avatar" [alt]="profileData.firstName">
         </div>
     </div>
     <hr />
